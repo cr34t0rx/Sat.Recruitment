@@ -23,7 +23,8 @@ public class UserDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         //load initial data from Users.txt
-        var seedData = FileUserReader.ReadAllUsers();
+        var path = Directory.GetCurrentDirectory() + "/Files/Users.txt";
+        var seedData = FileUserReader.ReadAllUsers(path);
 
         if (seedData != null)
             modelBuilder.Entity<User>().HasData(seedData);

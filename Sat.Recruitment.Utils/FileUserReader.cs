@@ -4,9 +4,8 @@ namespace Sat.Recruitment.Utils;
 
 public class FileUserReader
 {
-    public static List<User> ReadAllUsers()
+    public static List<User> ReadAllUsers(string path)
     {
-        var path = Directory.GetCurrentDirectory() + "/Files/Users.txt";
         if (!File.Exists(path))
             return null;
 

@@ -1,3 +1,4 @@
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http.Json;
@@ -53,7 +54,8 @@ public class UsersControllerTests
     [InlineData("Ana", "ana@gmail.com", "direccion 3", "+58123125", "Premium", 123)]
     public async Task SuccessfulCreation(string name, string email, string address, string phone, string userType, decimal money)
     {
-        var users = FileUserReader.ReadAllUsers();
+        var path = Directory.GetCurrentDirectory() + "/Files/Users.txt";
+        var users = FileUserReader.ReadAllUsers(path);
         var mock = users.AsQueryable().BuildMockDbSet();
 
         var userRepository = new TestUserRepository(mock.Object);
@@ -88,7 +90,8 @@ public class UsersControllerTests
     [InlineData("Agustina", "Agustina@gmail.com", "Garay y Otra Calle", "+534645213542", "SuperUser", 112234)]
     public async Task SuccessfulDuplicateValidation(string name, string email, string address, string phone, string userType, decimal money)
     {
-        var users = FileUserReader.ReadAllUsers();
+        var path = Directory.GetCurrentDirectory() + "/Files/Users.txt";
+        var users = FileUserReader.ReadAllUsers(path);
         var mock = users.AsQueryable().BuildMockDbSet();
 
         var userRepository = new TestUserRepository(mock.Object);
