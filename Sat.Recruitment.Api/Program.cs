@@ -4,11 +4,12 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Sat.Recruitment.Api.Databases;
-using Sat.Recruitment.Api.Models;
-using Sat.Recruitment.Api.Models.Database;
-using Sat.Recruitment.Api.Repositories;
-using Sat.Recruitment.Api.Services;
+using Sat.Recruitment.Application.Models;
+using Sat.Recruitment.Application.Services;
+using Sat.Recruitment.Domain.Models;
+using Sat.Recruitment.Domain.Repositories;
+using Sat.Recruitment.Infrastructure;
+using Sat.Recruitment.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

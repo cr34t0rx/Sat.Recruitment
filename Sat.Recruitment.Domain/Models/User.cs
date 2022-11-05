@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Sat.Recruitment.Api.Models.Database;
+namespace Sat.Recruitment.Domain.Models;
 
 public class User
 {

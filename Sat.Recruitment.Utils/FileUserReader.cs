@@ -1,8 +1,6 @@
-﻿using Sat.Recruitment.Api.Models.Database;
-using System.Collections.Generic;
-using System.IO;
+﻿using Sat.Recruitment.Domain.Models;
 
-namespace Sat.Recruitment.Api.Utils;
+namespace Sat.Recruitment.Utils;
 
 public class FileUserReader
 {

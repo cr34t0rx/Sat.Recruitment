@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sat.Recruitment.Api.Models.Database;
-using Sat.Recruitment.Api.Repositories;
+using Sat.Recruitment.Domain.Models;
+using Sat.Recruitment.Domain.Repositories;
 using System.Threading.Tasks;
 
 namespace Sat.Recruitment.Test;

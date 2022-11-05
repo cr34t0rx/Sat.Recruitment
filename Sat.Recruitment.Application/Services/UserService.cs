@@ -1,10 +1,9 @@
-﻿using Sat.Recruitment.Api.Models;
-using Sat.Recruitment.Api.Models.Database;
-using Sat.Recruitment.Api.Repositories;
-using System.Threading.Tasks;
+﻿using Sat.Recruitment.Application.Models;
+using Sat.Recruitment.Domain.Repositories;
+using Sat.Recruitment.Domain.Models;
 using AutoMapper;
 
-namespace Sat.Recruitment.Api.Services;
+namespace Sat.Recruitment.Application.Services;
 
 public class UserService : IUserService
 {

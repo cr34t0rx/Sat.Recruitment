@@ -6,10 +6,10 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc.Testing;
 using MockQueryable.Moq;
 using Sat.Recruitment.Api.Controllers;
-using Sat.Recruitment.Api.Models;
-using Sat.Recruitment.Api.Models.Database;
-using Sat.Recruitment.Api.Services;
-using Sat.Recruitment.Api.Utils;
+using Sat.Recruitment.Application.Models;
+using Sat.Recruitment.Application.Services;
+using Sat.Recruitment.Domain.Models;
+using Sat.Recruitment.Utils;
 using Xunit;
 
 namespace Sat.Recruitment.Test;
@@ -86,7 +86,7 @@ public class UsersControllerTests
     [InlineData("Juan", "Juan@marmol.com", "Peru 2464", "+5491154762312", "Normal", 1234)]
     [InlineData("Franco", "Franco.Perez@gmail.com", "Alvear y Colombres", "+534645213542", "Premium", 112234)]
     [InlineData("Agustina", "Agustina@gmail.com", "Garay y Otra Calle", "+534645213542", "SuperUser", 112234)]
-    public async Task SuccessfulDuplicaaeValidation(string name, string email, string address, string phone, string userType, decimal money)
+    public async Task SuccessfulDuplicateValidation(string name, string email, string address, string phone, string userType, decimal money)
     {
         var users = FileUserReader.ReadAllUsers();
         var mock = users.AsQueryable().BuildMockDbSet();

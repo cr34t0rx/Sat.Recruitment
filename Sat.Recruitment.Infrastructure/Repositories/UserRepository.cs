@@ -1,10 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sat.Recruitment.Api.Databases;
-using Sat.Recruitment.Api.Models.Database;
-using System.Linq;
-using System.Threading.Tasks;
+using Sat.Recruitment.Domain.Models;
+using Sat.Recruitment.Domain.Repositories;
 
-namespace Sat.Recruitment.Api.Repositories;
+namespace Sat.Recruitment.Infrastructure.Repositories;
 
 public class UserRepository : IUserRepository
 {

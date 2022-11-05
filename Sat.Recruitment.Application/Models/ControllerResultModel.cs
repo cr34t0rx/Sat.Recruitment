@@ -1,4 +1,4 @@
-﻿namespace Sat.Recruitment.Api.Models;
+﻿namespace Sat.Recruitment.Application.Models;
 
 public class ControllerResultModel
 {

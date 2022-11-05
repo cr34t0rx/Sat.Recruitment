@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sat.Recruitment.Api.Models.Database;
-using Sat.Recruitment.Api.Utils;
+using Sat.Recruitment.Utils;
+using Sat.Recruitment.Domain.Models;
 
-namespace Sat.Recruitment.Api.Databases;
+namespace Sat.Recruitment.Infrastructure;
 
 public class UserDbContext : DbContext
 {

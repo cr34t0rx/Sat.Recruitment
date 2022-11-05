@@ -1,7 +1,6 @@
-﻿using Sat.Recruitment.Api.Models.Database;
-using System.Threading.Tasks;
+﻿using Sat.Recruitment.Domain.Models;
 
-namespace Sat.Recruitment.Api.Repositories;
+namespace Sat.Recruitment.Domain.Repositories;
 
 public interface IUserRepository
 {
