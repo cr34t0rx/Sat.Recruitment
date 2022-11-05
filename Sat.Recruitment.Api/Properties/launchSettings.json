@@ -19,9 +19,10 @@
     },
     "Sat.Recruitment.Api": {
       "commandName": "Project",
+      "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
       "applicationUrl": "http://localhost:5000",
+      "launchUrl": "swagger/index.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
